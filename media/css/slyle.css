@@ -65,7 +65,7 @@ p, h1, h2, h3, h4, h5, h6{
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  background-image: url("/My\ Portfolio/media/img/back.png");
+  background-image: url("/media/img/back.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -161,7 +161,7 @@ p, h1, h2, h3, h4, h5, h6{
 
 .container{
   margin-top: 150px;
-  background-image: url("/My\ Portfolio/media/img/back.png");
+  background-image: url("/media/img/back.png");
   background-size: cover;
   background-position: center;
 }
