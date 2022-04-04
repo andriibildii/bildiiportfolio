@@ -2,6 +2,12 @@
 
 :root {
   --main-color: #e38528;
+  --back-color: #000000;
+  --header-color: #222;
+  --text-color: #fff;
+  --dis-text-color: #fff;
+  --skill-bar-color: #fff;
+  --swircher-color: #fff;;
 }
 
 * {
@@ -22,8 +28,19 @@ html {
   scroll-behavior: smooth;
 }
 
+body.dark{
+  --main-color: #e38528;
+  --back-color:  rgb(238, 204, 188);
+  --header-color: rgb(170, 155, 140);
+  --text-color: #000000;
+  --dis-text-color: #000000;
+  --skill-bar-color: rgb(170, 155, 140);
+  --swircher-color: rgb(170, 155, 140);
+
+}
+
 body {
-  background: #000000;
+  background: var(--back-color);
   padding-left: 25rem;
 }
 
@@ -45,7 +62,7 @@ section {
 .heading{
   font-size: 4rem;
   padding-bottom: 1rem;
-  color:white;
+  color: var(--text-color);
   text-transform: uppercase;
 }
 
@@ -55,32 +72,40 @@ section {
 }
 
 p, h1, h2, h3, h4, h5, h6{
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* ===== HOME ===== */
 
 .home {
   display: flex;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
   background-image: url("/media/img/back.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
+.my-profession{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 400;
+}
+
 .home .image {
-  flex: 1 1 80rem;
+  width: 50%;
+  height: auto;
 }
 
 .home .image img {
-  width: 90%;
+  width: 100%;
 }
 
 .home .content {
-  flex: 1 1 25rem;
+  width: 45%;
 }
 
 .home .content .hi {
@@ -200,7 +225,7 @@ p, h1, h2, h3, h4, h5, h6{
   content: "About";
   font-size: 5rem;
   font-weight: 800;
-  color: white;
+  color: var(--text-color);
   opacity: 0.1;
   line-height: 0;
 }
@@ -240,7 +265,7 @@ p, h1, h2, h3, h4, h5, h6{
   content: "Skills";
   font-size: 5rem;
   font-weight: 800;
-  color: white;
+  color: var(--text-color);
   opacity: 0.1;
   line-height: 0;
 }
@@ -251,7 +276,7 @@ p, h1, h2, h3, h4, h5, h6{
 
 .skill-title {
   font-size: 14px;
-  color: #ece6fa;
+  color: var(--text-color);
   font-weight: 600;
   margin-bottom: 0.3rem;
 
@@ -261,7 +286,7 @@ p, h1, h2, h3, h4, h5, h6{
   width: 100%;
   height: 18px;
   border-radius: 4px;
-  background-color: #ece6fa;
+  background-color: var(--skill-bar-color);
   position: relative;
   overflow: hidden;
 }
@@ -273,19 +298,37 @@ p, h1, h2, h3, h4, h5, h6{
   top: 0;
   left: 0;
   background-color: var(--main-color);
-  transition: 4s;
-}
-
-.skill-percent p{
-  margin-right: 9px;
-  text-align: right;
-  color: black;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: .5px;
+  transition: 2s;
 }
 
 /* Responsive */
+
+@media (max-width:991px){
+
+  html{
+      font-size: 8px;
+  }
+  
+  body{
+      padding: 0;
+  }
+
+  .cursor-1,
+  .cursor-2{
+      display: none;
+  }
+}
+
+@media (max-width:770px){
+  .home .image {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  
+  .home .content {
+    width: 100%;
+  }
+}
 
 @media (max-width:1199px) {
 
@@ -296,12 +339,7 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 @media (max-width:767px) {
-
-  .image img{
-    margin-bottom: 150px;
-  }
-
-  .about .about-content .skills,
+  .skills,
   .about .about-content .personal-info{
       flex: 0 0 100%;
       max-width: 100%;

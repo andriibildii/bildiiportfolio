@@ -3,20 +3,20 @@
 header{
     position: fixed;
     top:0; left:0; bottom:0;
-    background:#222;
+    background:var(--header-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
     flex-flow: column;
     padding:8rem 2rem;
-    width:30rem;
+    width: 30rem;
     text-align: center;
 }
 
 header .logo{
     text-transform: uppercase;
-    color:#fff;
+    color:var(--text-color);
     font-size: 3rem;
     font-weight: bolder;
 }
@@ -29,7 +29,7 @@ header .logo span{
 header .navbar a{
     display: block;
     font-size: 2rem;
-    color:#fff;
+    color:var(--text-color);
     margin:2rem 0;
 }
 
@@ -40,7 +40,7 @@ header .navbar a:hover{
 
 header .follow a{
     font-size: 2.5rem;
-    color:#fff;
+    color:var(--text-color);
     margin:0 .7rem;
 }
 
@@ -50,10 +50,11 @@ header .follow a:hover{
 
 #menu-bars{
     position: fixed;
-    top:1rem; right: 1rem;
+    top:1rem; 
+    right: 1rem;
     z-index: 10000;
     background:var(--main-color);
-    color:#fff;
+    color:var(--text-color);
     border-radius: .5rem;
     padding:1rem 1.5rem;
     font-size: 3rem;
@@ -62,16 +63,14 @@ header .follow a:hover{
 }
 
 /* media queries  */
+
+@media (max-width:1280px){
+    header{
+        width: 25.5rem;
+    }
+}
+
 @media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-    
-    body{
-        padding: 0;
-    }
-
     #menu-bars{
         display: initial;
     }
@@ -83,19 +82,9 @@ header .follow a:hover{
     header.active{
         left:0%;
     }
-
-    .cursor-1,
-    .cursor-2{
-        display: none;
-    }
 }
 
 @media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
     header{
         width:100%;
     }

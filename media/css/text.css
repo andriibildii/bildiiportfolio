@@ -1,7 +1,7 @@
 .text {
   font-size: 30px;
   user-select: none;
-  color: #fff;
+  color: var(--dis-text-color);
   opacity: 0.5;
   
 }
