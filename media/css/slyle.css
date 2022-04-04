@@ -7,7 +7,8 @@
   --text-color: #fff;
   --dis-text-color: #fff;
   --skill-bar-color: #fff;
-  --swircher-color: #fff;;
+  --swircher-color: #fff;
+  --scroll-icon-color: #fff;
 }
 
 * {
@@ -36,7 +37,7 @@ body.dark{
   --dis-text-color: #000000;
   --skill-bar-color: rgb(170, 155, 140);
   --swircher-color: rgb(170, 155, 140);
-
+  --scroll-icon-color: #000000;
 }
 
 body {
@@ -113,20 +114,14 @@ p, h1, h2, h3, h4, h5, h6{
   color: var(--main-color);
 }
 
-.home .content h3 {
+.home .content h1 {
   font-size: 4.5rem;
   text-transform: uppercase;
 }
 
-.home .content h3 span {
+.home .content h1 span {
   color: var(--main-color);
   text-transform: uppercase;
-}
-
-.home .content .text {
-  font-size: 1.7rem;
-  color: #666;
-  padding: 0.5rem 0;
 }
 
 /* ===== HOME END ===== */
@@ -135,6 +130,10 @@ p, h1, h2, h3, h4, h5, h6{
 
 .container{
   width: 100%;
+  margin-top: 150px;
+  background-image: url("/media/img/back.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .section-title{
@@ -182,14 +181,7 @@ p, h1, h2, h3, h4, h5, h6{
   position: relative;
 }
 
-/* About */
-
-.container{
-  margin-top: 150px;
-  background-image: url("/media/img/back.png");
-  background-size: cover;
-  background-position: center;
-}
+/* about */
 
 .about .about-content{
   flex: 0 0 100%;
@@ -213,7 +205,7 @@ p, h1, h2, h3, h4, h5, h6{
   color: var(--main-color);
 }
 
-/* Personal-info */ 
+/* personal-info */ 
 
 .about .about-content .personal-info{
   flex: 0 0 100%;
@@ -249,6 +241,10 @@ p, h1, h2, h3, h4, h5, h6{
   display: inline-block;
 }
 
+.about .about-content .personal-info .info-item p a{
+  color: var(--text-color);
+}
+
 /* Skills */
 
 .skills{
@@ -259,7 +255,6 @@ p, h1, h2, h3, h4, h5, h6{
   padding-right: 15px;
   padding-bottom: 55px;
 }
-
 
 .skills::before {
   content: "Skills";
@@ -279,7 +274,6 @@ p, h1, h2, h3, h4, h5, h6{
   color: var(--text-color);
   font-weight: 600;
   margin-bottom: 0.3rem;
-
 }
 
 .skill-bar {
