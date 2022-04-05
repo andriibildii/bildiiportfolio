@@ -2,7 +2,8 @@
   font-size: 30px;
   user-select: none;
   color: var(--dis-text-color);
-  opacity: 0.5; 
+  opacity: 0.5;
+ 
 }
 
 /* ===== Стили для елиментов SPAN =====*/
