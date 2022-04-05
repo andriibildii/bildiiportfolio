@@ -1,9 +1,9 @@
-.page-wrap {
+.page-wrap{
     display: flex;
     width: 100%;
 }
 
-.example {
+.example{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -13,13 +13,13 @@
     opacity: 0.2;
 }
 
-h2 {
+h2{
     padding-top: 10px;
     font-size: 18px;
     font-weight: 400;
 }
 
-.scroll-icon {
+.scroll-icon{
     display: block;
     position: relative;
     height: 50px;
@@ -28,7 +28,7 @@ h2 {
     border-radius: 3rem;
 }
 
-.scroll-icon__wheel-outer {
+.scroll-icon__wheel-outer{
     display: block;
     position: absolute;
     left: 50%;
@@ -40,7 +40,7 @@ h2 {
     overflow: hidden;
   }
 
-.scroll-icon__wheel-inner {
+.scroll-icon__wheel-inner{
     display: block;
     height: 100%;
     width: 100%;
@@ -49,10 +49,17 @@ h2 {
     animation: scroll 2.75s ease-in-out infinite;
 }
 
-@keyframes scroll {
+@keyframes scroll{
   0%   { transform: translateY(0); }
   25%  { transform: translateY(-1.5rem); }
   50%  { transform: translateY(0); }
   75%  { transform: translateY(1.5rem); }
   100% { transform: translateY(0); }
 }
+
+
+@media (max-width:770px){
+    .example {
+        bottom: 30px;
+    }
+  }

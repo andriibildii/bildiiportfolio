@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
-:root {
+:root{
   --main-color: #e38528;
   --back-color: #000000;
   --header-color: #222;
@@ -9,9 +9,10 @@
   --skill-bar-color: #fff;
   --swircher-color: #fff;
   --scroll-icon-color: #fff;
+  --background-image: url('/media/img/back.png');
 }
 
-* {
+*{
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -23,7 +24,7 @@
   line-height: 1.5;
 }
 
-html {
+html{
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -40,14 +41,13 @@ body.dark{
   --scroll-icon-color: #000000;
 }
 
-body {
+body{
   background: var(--back-color);
   padding-left: 25rem;
 }
 
 ::before,::after{
   box-sizing: border-box;
-
 }
 
 .padd-15{
@@ -55,7 +55,7 @@ body {
   padding-right: 15px;
 }
 
-section {
+section{
   padding: 1rem 5%;
   min-height: 100vh;
 }
@@ -78,12 +78,12 @@ p, h1, h2, h3, h4, h5, h6{
 
 /* ===== HOME ===== */
 
-.home {
+.home{
   display: flex;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url('/media/img/back.png');
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -96,30 +96,30 @@ p, h1, h2, h3, h4, h5, h6{
   font-weight: 400;
 }
 
-.home .image {
+.home .image{
   width: 50%;
   height: auto;
 }
 
-.home .image img {
+.home .image img{
   width: 100%;
 }
 
-.home .content {
+.home .content{
   width: 45%;
 }
 
-.home .content .hi {
+.home .content .hi{
   font-size: 2rem;
   color: var(--main-color);
 }
 
-.home .content h1 {
+.home .content h1{
   font-size: 4.5rem;
   text-transform: uppercase;
 }
 
-.home .content h1 span {
+.home .content h1 span{
   color: var(--main-color);
   text-transform: uppercase;
 }
@@ -131,7 +131,7 @@ p, h1, h2, h3, h4, h5, h6{
 .container{
   width: 100%;
   margin-top: 150px;
-  background-image: url('/media/img/back.png');
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
 }
@@ -207,13 +207,13 @@ p, h1, h2, h3, h4, h5, h6{
 
 /* personal-info */ 
 
-.about .about-content .personal-info{
+.personal-info{
   flex: 0 0 100%;
   max-width: 50%;
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
-.about .about-content .personal-info:before {
+.personal-info:before{
   content: "About";
   font-size: 5rem;
   font-weight: 800;
@@ -222,28 +222,41 @@ p, h1, h2, h3, h4, h5, h6{
   line-height: 0;
 }
 
-.about .about-content .personal-info .info-item{
+.personal-info .info-item{
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.about .about-content .personal-info .info-item p{
+.personal-info .info-item p{
   font-weight: 600;
   padding: 10px 0;
   font-size: 16px;
   border-bottom: 1px solid #666;
 }
 
-.about .about-content .personal-info .info-item p span{
+.personal-info .info-item p:hover{
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.personal-info .info-item p a span{
   font-weight: 400;
   color: var(--main-color);
   margin-left: 4px;
   display: inline-block;
 }
 
-.about .about-content .personal-info .info-item p a{
+.personal-info .info-item p a{
   color: var(--text-color);
 }
+.personal-info .info-item p a:hover{
+  color: var(--main-color);
+}
+
+.personal-info .info-item p a span:hover{
+  color: var(--text-color);
+}
+
 
 /* Skills */
 
@@ -253,10 +266,10 @@ p, h1, h2, h3, h4, h5, h6{
   margin-top: 38px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 55px;
+  padding-bottom: 25px;
 }
 
-.skills::before {
+.skills::before{
   content: "Skills";
   font-size: 5rem;
   font-weight: 800;
@@ -265,18 +278,18 @@ p, h1, h2, h3, h4, h5, h6{
   line-height: 0;
 }
 
-.skill {
+.skill{
   margin: 0.5rem 0;
 }
 
-.skill-title {
+.skill-title{
   font-size: 14px;
   color: var(--text-color);
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
-.skill-bar {
+.skill-bar{
   width: 100%;
   height: 18px;
   border-radius: 4px;
@@ -285,7 +298,7 @@ p, h1, h2, h3, h4, h5, h6{
   overflow: hidden;
 }
 
-.skill-progress {
+.skill-progress{
   position: absolute;
   height: 100%;
   width: 0%;
@@ -293,6 +306,10 @@ p, h1, h2, h3, h4, h5, h6{
   left: 0;
   background-color: var(--main-color);
   transition: 2s;
+}
+
+.follow-down{
+  display: none;
 }
 
 /* Responsive */
@@ -311,6 +328,35 @@ p, h1, h2, h3, h4, h5, h6{
   .cursor-2{
       display: none;
   }
+
+  .follow-down{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row;
+    padding-top: 20px;
+
+  }
+
+  .follow-down::before{
+    content: "Contacts";
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    opacity: .1;
+    line-height: 0;
+  }
+
+  .follow-down a{
+    font-size: 3.6rem;
+    color:var(--text-color);
+    margin: 21px;
+  }
+
+  .follow-down a:hover{
+      color:var(--main-color);
+  }
 }
 
 @media (max-width:770px){
@@ -319,12 +365,12 @@ p, h1, h2, h3, h4, h5, h6{
     padding-bottom: 100px;
   }
   
-  .home .content {
+  .home .content{
     width: 100%;
   }
 }
 
-@media (max-width:1199px) {
+@media (max-width:1199px){
 
   .about .about-content .personal-info .info-item p span{
       display: block;
@@ -332,7 +378,7 @@ p, h1, h2, h3, h4, h5, h6{
   }
 }
 
-@media (max-width:767px) {
+@media (max-width:767px){
   .skills,
   .about .about-content .personal-info{
       flex: 0 0 100%;
