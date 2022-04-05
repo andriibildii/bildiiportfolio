@@ -336,6 +336,7 @@ p, h1, h2, h3, h4, h5, h6{
     justify-content: flex-start;
     flex-flow: row;
     padding-top: 20px;
+    margin-right: 15px;
 
   }
 
