@@ -28,6 +28,13 @@ h2{
     border-radius: 3rem;
 }
 
+.example._active{
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 0.8s ease 1s;
+
+}
+
 .scroll-icon__wheel-outer{
     display: block;
     position: absolute;

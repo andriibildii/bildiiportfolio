@@ -9,7 +9,7 @@
   --skill-bar-color: #fff;
   --swircher-color: #fff;
   --scroll-icon-color: #fff;
-  --background-image: url('/media/img/back.png');
+  --background-image: url('../../media/img/back.png');
 }
 
 *{
