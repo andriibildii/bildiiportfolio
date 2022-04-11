@@ -126,7 +126,7 @@ p, h1, h2, h3, h4, h5, h6{
 .logo b{
   font: 4.5vh "Vibur";
   color: var(--neon-color-body);
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em var(--neon-color-shadow), 0 0 0.5em var(--neon-color-shadow), 0 0 0.1em var(--neon-color-shadow), 0 10px 3px var(--neon-color-second);
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em var(--neon-color-shadow), 0 0 0.5em var(--neon-color-shadow), 0 0 0.1em var(--neon-color-shadow), 0 5px 3px var(--neon-color-second);
 }
 
 .logo b span{
