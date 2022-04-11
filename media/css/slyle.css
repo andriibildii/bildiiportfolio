@@ -240,7 +240,7 @@ p, h1, h2, h3, h4, h5, h6{
   position: relative;
 }
 
-/* about */
+/* ===== about ===== */
 
 .about .about-content{
   flex: 0 0 100%;
@@ -264,7 +264,7 @@ p, h1, h2, h3, h4, h5, h6{
   color: var(--main-color);
 }
 
-/* personal-info */ 
+/* ===== personal-info ===== */ 
 
 .personal-info{
   flex: 0 0 100%;
@@ -316,8 +316,7 @@ p, h1, h2, h3, h4, h5, h6{
   color: var(--text-color);
 }
 
-
-/* Skills */
+/* ===== Skills ===== */
 
 .skills{
   flex: 0 0 100%;
@@ -371,7 +370,7 @@ p, h1, h2, h3, h4, h5, h6{
   display: none;
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 
 @media (max-width:991px){
 
@@ -392,7 +391,7 @@ p, h1, h2, h3, h4, h5, h6{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: row;
     padding-top: 20px;
   }
@@ -407,25 +406,42 @@ p, h1, h2, h3, h4, h5, h6{
   }
 
   .follow-down a{
+    width: 65px;
+    height: 65px;
     font-size: 3.6rem;
     color:var(--text-color);
-    padding: 16px;
+    padding: 20px;
   }
 
   .follow-down a:hover{
       color:var(--main-color);
   }
+
+  .follow-down-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width:770px){
   .home .image {
+    position: relative;
+    top: 20px;
+    right: 0;
     width: 100%;
     padding-bottom: 100px;
   }
   
   .home .content{
-    margin-top: 80px;
+    margin-top: 70px;
     width: 100%;
+  }
+
+  .skills,
+  .about .about-content .personal-info{
+      flex: 0 0 100%;
+      max-width: 100%;
   }
 }
 
@@ -434,13 +450,5 @@ p, h1, h2, h3, h4, h5, h6{
   .about .about-content .personal-info .info-item p span{
       display: block;
       margin-left: 0;
-  }
-}
-
-@media (max-width:767px){
-  .skills,
-  .about .about-content .personal-info{
-      flex: 0 0 100%;
-      max-width: 100%;
   }
 }

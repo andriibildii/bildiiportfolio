@@ -24,7 +24,6 @@
 
 .style-switcher .style-switcher-toggler{
     top: 0;
-
 }
 
 .style-switcher .night-day{
@@ -36,7 +35,7 @@
 
     .style-switcher{
         position: fixed;
-        right: 14px;
+        right: 5%;
         top: 72px;
     }
 }
