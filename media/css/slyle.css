@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url(//fonts.googleapis.com/css?family=Vibur);
 
 :root{
   --main-color: #e38528;
@@ -10,6 +11,9 @@
   --swircher-color: #fff;
   --scroll-icon-color: #fff;
   --background-image: url('../../media/img/back.png');
+  --neon-color-body: #faae63;
+  --neon-color-shadow: #e38528;
+  --neon-color-second: #000000;
 }
 
 *{
@@ -39,6 +43,9 @@ body.dark{
   --skill-bar-color: rgb(170, 155, 140);
   --swircher-color: rgb(170, 155, 140);
   --scroll-icon-color: #000000;
+  --neon-color-body: #e38528;
+  --neon-color-shadow: rgba(255, 128, 0, 0.363);
+  --neon-color-second: rgb(238, 204, 188);
 }
 
 body{
@@ -109,9 +116,60 @@ p, h1, h2, h3, h4, h5, h6{
   width: 45%;
 }
 
-.home .content .hi{
-  font-size: 2rem;
+/* ===== neon text ===== */
+
+.home .content .logo{
+  font-size: 2.5rem;
   color: var(--main-color);
+}
+
+.logo b{
+  font: 4.5vh "Vibur";
+  color: var(--neon-color-body);
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em var(--neon-color-shadow), 0 0 0.5em var(--neon-color-shadow), 0 0 0.1em var(--neon-color-shadow), 0 10px 3px var(--neon-color-second);
+}
+
+.logo b span{
+  font: 4.5vh "Vibur";
+  animation: blink linear infinite 2s;
+}
+
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: var(--neon-color-second);
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: var(--neon-color-second);
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: var(--neon-color-second);
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 }
 
 .home .content h1{
@@ -365,6 +423,7 @@ p, h1, h2, h3, h4, h5, h6{
   }
   
   .home .content{
+    margin-top: 40px;
     width: 100%;
   }
 }
