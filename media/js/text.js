@@ -8,5 +8,11 @@ text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>');
 
 text.addEventListener('mouseover', function(event) {
     if (event.target.tagName != 'SPAN') return;
-    event.target.classList.add('activeText');
-});
+    event.target.classList.toggle('activeText');
+
+    /* if (event.target.classList.contains('activeText')) {
+        event.target.classList.remove('activeText')
+    } else {
+        event.target.classList.add('activeText');
+    } */
+})
