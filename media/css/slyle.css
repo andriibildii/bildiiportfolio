@@ -375,7 +375,7 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .contacts {
-  min-height: 150px;
+  min-height: 100px;
 }
 
 /* ===== Responsive ===== */
@@ -406,7 +406,7 @@ p, h1, h2, h3, h4, h5, h6{
 
   .follow-down::before{
     content: "Contacts";
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: var(--text-color);
     opacity: .1;
@@ -414,11 +414,9 @@ p, h1, h2, h3, h4, h5, h6{
   }
 
   .follow-down a{
-    font-size: 40px;
-    width: 65px;
-    height: 65px;
+    font-size: 34px;
     color:var(--text-color);
-    padding: 20px;
+    padding: 10px;
   }
 
   .follow-down a:hover{
