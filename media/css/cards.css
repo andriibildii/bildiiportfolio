@@ -1,100 +1,104 @@
 .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 200px 60px;
-    grid-template-areas: 'image' 'text' 'code';
-    border-radius: 18px;
-    background-color: var(--card-color);
-    box-shadow: 1px 1px 3px grey;
-    text-align: center;
-    margin: 30px;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 210px 200px 60px;
+	grid-template-areas: "image" "text" "code";
+	border-radius: 18px;
+	background-color: var(--card-color);
+	box-shadow: 1px 1px 3px grey;
+	text-align: center;
+	margin: 30px;
+	transform-style: preserve-3d;
+	perspective: 1000px;
 }
 
 .card-image {
-    grid-area: image;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+	grid-area: image;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
 .findyourrhytm {
-    background-image: url("../img/jammingL.png");
+	background-image: url("../img/jammingL.png");
+}
+
+.flashcards {
+	background-image: url("../img/flashcards.png");
 }
 
 .appoinment {
-    background-image: url("../img/appointment.png");
+	background-image: url("../img/appointment.png");
 }
 
 .lawfirm {
-    background-image: url("../img/lawfirm.png");
+	background-image: url("../img/lawfirm.png");
 }
 
 .card-text {
-    grid-area: text;
-    margin: 15px;
-    transform: translateZ(30px);
+	grid-area: text;
+	margin: 15px;
+	transform: translateZ(30px);
 }
 
 .card-text h2 {
-    font-size: 30px;
-    color: var(--card-head-text-color);
+	font-size: 30px;
+	color: var(--card-head-text-color);
 }
 
 .card-text p {
-    font-size: 16px;
-    color: grey;
+	font-size: 16px;
+	color: grey;
 }
 
 .card-text span {
-    font-size: 14px;
-    color: var(--main-color);
+	font-size: 14px;
+	color: var(--main-color);
 }
 
 .card-code {
-    grid-area: code;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: var(--main-color);
+	grid-area: code;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: var(--main-color);
 }
 
 .card-code .code {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
 }
 
 .card-code .border-l {
-    border-right: 1px solid var(--header-color);
+	border-right: 1px solid var(--header-color);
 }
 
 .card-code .border-r {
-    border-left: 1px solid var(--header-color);
+	border-left: 1px solid var(--header-color);
 }
 
 .js-tilt-glare {
-    border-radius: 18px;
+	border-radius: 18px;
 }
 
 .code a {
-    color: black;
-    font-size: 40px;
-    cursor: pointer;
+	color: black;
+	font-size: 40px;
+	cursor: pointer;
 }

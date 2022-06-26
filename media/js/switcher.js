@@ -1,20 +1,16 @@
-/* ===== dark and kigth theme mode ===== */
+/* ===== dark and light theme mode ===== */
 
 const dayNight = document.querySelector(".night-day");
 dayNight.addEventListener("click", () => {
-    dayNight.querySelector("i").classList.toggle("fa-sun");
-    dayNight.querySelector("i").classList.toggle("fa-moon");
-    document.body.classList.toggle("dark");
-
+	dayNight.querySelector("i").classList.toggle("fa-sun");
+	dayNight.querySelector("i").classList.toggle("fa-moon");
+	document.body.classList.toggle("dark");
 });
 
 window.addEventListener("load", () => {
-    if(document.body.classList.contains("dark"))
-    {
-        dayNight.querySelector("i").classList.add("fa-sun");
-    }
-    else
-    {
-        dayNight.querySelector("i").classList.add("fa-moon");
-    }
+	if (document.body.classList.contains("dark")) {
+		dayNight.querySelector("i").classList.add("fa-sun");
+	} else {
+		dayNight.querySelector("i").classList.add("fa-moon");
+	}
 });
