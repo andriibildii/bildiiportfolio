@@ -3,7 +3,7 @@ const skills_bars = document.querySelectorAll(".skill-progress");
 
 window.addEventListener("scroll", () => {
   skillsEffect();
-  countUp();
+  // countUp();
 });
 
 function checkScroll(el) {

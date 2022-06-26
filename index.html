@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrii Bildii Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 <!-- CSS LINKS -->
+    <!-- CSS only -->
     <link rel="stylesheet" href="./media/css/slyle.css">
     <link rel="stylesheet" href="./media/css/header.css">
     <link rel="stylesheet" href="./media/css/text.css">
     <link rel="stylesheet" href="./media/css/cursor.css">
     <link rel="stylesheet" href="./media/css/switcher.css">
     <link rel="stylesheet" href="./media/css/scrollicon.css">
+    <link rel="stylesheet" href="./media/css/cards.css">
 </head>
 <body class="">
 
@@ -29,6 +31,7 @@
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#about">about</a>
+            <a href="#projects">projects</a>
         </nav>
         <div class="follow">
             <a href="https://github.com/andriibildii" class="fab fa-github" target="_blank"></a>
@@ -84,34 +87,6 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="personal-info padd-15">
-                                <div class="row">
-                                    <div class="info-item padd-15">
-                                        <p><a>Birthday:<span>22 jul 1993</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a>Age:<span>28</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a href="mailto:andtii.bildii@gmail.com" target="_blank">Email :<span>andtii.bildii@gmail.com</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a>Degree:<span>Master</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a href="tel:+380689004783">Phone :<span>+38 068 900 47 83</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a>Country:<span>Ukraine</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a>City:<span>Kyiv</span></a></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p><a>Languages : <span>ukrainian, english, russian</span></a></p>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="skills">
                                 <div class="skill">
                                     <h3 class="skill-title">HTML</h3>
@@ -127,23 +102,152 @@
                                     </div>
                                 </div>
                                 <div class="skill">
+                                    <h3 class="skill-title">Git & GitHub</h3>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="50%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
                                     <h3 class="skill-title">JavaScript</h3>
-                                            
+
                                     <div class="skill-bar">
                                         <div class="skill-progress" data-progress="25%"></div>
                                     </div>
                                 </div>
                                 <div class="skill">
-                                    <h3 class="skill-title">Git & GitHub</h3>     
+                                    <h3 class="skill-title">React</h3>
+
                                     <div class="skill-bar">
-                                        <div class="skill-progress" data-progress="50%"></div>
+                                        <div class="skill-progress" data-progress="25%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <h3 class="skill-title">Redux</h3>
+
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-progress="25%"></div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p><a>BIRTHDAY:<span>22 jul 1993</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a>AGE:<span>28</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a href="mailto:andtii.bildii@gmail.com" target="_blank">EMAIL :<span>andtii.bildii@gmail.com</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a>DEGREE:<span>Master</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a href="tel:+380689004783">PHONE :<span>+38 068 900 47 83</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a>COUNTRY:<span>Ukraine</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a>CITY:<span>Kyiv</span></a></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p><a>LANGUAGE : <span>ukrainian, english, russian</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- ABOUT END -->
+
+        <!-- PROJECTS START -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>My <span> projects </span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" >
+                    <div class="card-image findyourrhytm"></div>
+                    <div class="card-text">
+                        <h2>Find your rhythm</h2>
+                        <p>Making playlists With the Spotify API</p>
+                        <span>React/async requests</span>
+                    </div>
+                    <div class="card-code">
+                        <div class="code border-l">
+                            <a href="https://github.com/andriibildii/jammming" class="fab fa-github" target="_blank"></a>
+                        </div>
+                        <div class="code border-r" >
+                            <a href="https://find-your-rhythm.surge.sh/" class="fab fa-chrome" target="_blank"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" >
+                    <div class="card-image appoinment" ></div>
+                    <div class="card-text">
+                        <h2>Appointment Planner</h2>
+                        <p>Manages contacts and appointments</p>
+                        <span>React/React Router</span>
+                    </div>
+                    <div class="card-code">
+                        <div class="code border-l">
+                            <a href="https://github.com/andriibildii/appointment-planner" class="fab fa-github" target="_blank"></a>
+                        </div>
+                        <div class="code border-r" >
+                            <a href="https://bildii-appointment-planner.netlify.app" class="fab fa-chrome" target="_blank"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-tilt-reset="false">
+                    <div class="card-image"></div>
+                    <div class="card-text">
+                        <h2>Post One</h2>
+                        <p>Some text can be here</p>
+                    </div>
+                    <div class="card-code">
+                        <div class="code border-l">
+                            <a href="https://github.com/andriibildii" class="fab fa-github" target="_blank"></a>
+                        </div>
+                        <div class="code border-r" >
+                            <a href="https://github.com/andriibildii" class="fab fa-chrome" target="_blank"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-tilt-reset="false">
+                    <div class="card-image lawfirm"></div>
+                    <div class="card-text">
+                        <h2>Law Firm</h2>
+                        <p>Landing page for the law firm</p>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="card-code">
+                        <div class="code border-l">
+                            <a href="https://github.com/andriibildii/law_firm" class="fab fa-github" target="_blank"></a>
+                        </div>
+                        <div class="code border-r" >
+                            <a href="https://andriibildii.github.io/law_firm/" class="fab fa-chrome" target="_blank"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS END -->
+
+        <!-- CONTACTS START -->
+        <section class="contacts">
             <div class="follow-down">
                 <div class="follow-down-items">
                     <a href="https://github.com/andriibildii" class="fab fa-github" target="_blank"></a>
@@ -151,9 +255,9 @@
                     <a href="https://www.instagram.com/bildii_law/" class="fab fa-instagram" target="_blank"></a>
                     <a href="https://www.linkedin.com/in/andrii-bildii-329100149/" class="fab fa-linkedin" target="_blank"></a>
                 </div>
-            </div>    
+            </div>
         </section>
-        <!-- ABOUT END -->
+        <!-- CONTACTS END -->
 
         <!-- SWITCHER START-->
         <div class="style-switcher">
@@ -175,6 +279,7 @@
     <script src="./media/js/cursor.js"></script>
     <script src="./media/js/switcher.js"></script>
     <script src="./media/js/typedText.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
 
 </body>
 </html>

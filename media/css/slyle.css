@@ -14,6 +14,8 @@
   --neon-color-body: #faae63;
   --neon-color-shadow: #e38528;
   --neon-color-second: #000000;
+  --card-color: #000000;
+  --card-head-text-color: #fff;
 }
 
 *{
@@ -46,6 +48,8 @@ body.dark{
   --neon-color-body: #e38528;
   --neon-color-shadow: rgba(255, 128, 0, 0.363);
   --neon-color-second: rgb(238, 204, 188);
+  --card-color: rgb(238, 204, 188);
+  --card-head-text-color: #000000;
 }
 
 body{
@@ -341,7 +345,7 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .skill-title{
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-color);
   font-weight: 600;
   margin-bottom: 0.3rem;
@@ -368,6 +372,10 @@ p, h1, h2, h3, h4, h5, h6{
 
 .follow-down{
   display: none;
+}
+
+.contacts {
+  min-height: 150px;
 }
 
 /* ===== Responsive ===== */
@@ -406,9 +414,9 @@ p, h1, h2, h3, h4, h5, h6{
   }
 
   .follow-down a{
+    font-size: 40px;
     width: 65px;
     height: 65px;
-    font-size: 3.6rem;
     color:var(--text-color);
     padding: 20px;
   }
