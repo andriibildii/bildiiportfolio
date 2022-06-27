@@ -1,33 +1,32 @@
-.text{
-  font-size: 30px;
-  user-select: none;
-  color: var(--dis-text-color);
-  opacity: 0.5;
- 
+.text {
+	font-size: 30px;
+	user-select: none;
+	color: var(--dis-text-color);
+	opacity: 0.5;
 }
 
 /* ===== Стили для елиментов SPAN =====*/
 
-.text span{
-  display: inline-block;
-  cursor: pointer;
+.text span {
+	display: inline-block;
+	cursor: pointer;
 }
 
-.activeText{
-  animation: smoke 2s linear forwards;
+.activeText {
+	animation: smoke 2s linear forwards;
 }
 
-@keyframes smoke{
-  50% {
-    color: #e38528;
-  }
-  80%{
-    opacity: 0;
-    filter: blur(20px);
-    transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
-  }
-  0%{
-    opacity: 1;
-    transform: scale(4);
-  }
+@keyframes smoke {
+	50% {
+		color: #e38528;
+	}
+	80% {
+		opacity: 0;
+		filter: blur(20px);
+		transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+	}
+	0% {
+		opacity: 1;
+		transform: scale(4);
+	}
 }

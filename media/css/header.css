@@ -1,93 +1,93 @@
 /* ===== HEADER ===== */
 
-header{
-    position: fixed;
-    top:0; 
-    left:0; 
-    bottom:0;
-    background:var(--header-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    flex-flow: column;
-    padding:8rem 2rem;
-    width: 30rem;
-    text-align: center;
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: var(--header-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	flex-flow: column;
+	padding: 8rem 2rem;
+	width: 30rem;
+	text-align: center;
 }
 
-header .logo{
-    text-transform: uppercase;
-    color:var(--text-color);
-    font-size: 3rem;
-    font-weight: bolder;
+header .logo {
+	text-transform: uppercase;
+	color: var(--text-color);
+	font-size: 3rem;
+	font-weight: bolder;
 }
 
-header .logo span{
-    text-transform: uppercase;
-    color:var(--main-color);
+header .logo span {
+	text-transform: uppercase;
+	color: var(--main-color);
 }
 
-header .navbar a{
-    display: block;
-    font-size: 2rem;
-    color:var(--text-color);
-    margin:2rem 0;
+header .navbar a {
+	display: block;
+	font-size: 2rem;
+	color: var(--text-color);
+	margin: 2rem 0;
 }
 
-header .navbar a:hover{
-    letter-spacing: .2rem;
-    color:var(--main-color);
+header .navbar a:hover {
+	letter-spacing: 0.2rem;
+	color: var(--main-color);
 }
 
-header .follow a{
-    font-size: 2.5rem;
-    color:var(--text-color);
-    margin:0 .7rem;
+header .follow a {
+	font-size: 2.5rem;
+	color: var(--text-color);
+	margin: 0 0.7rem;
 }
 
-header .follow a:hover{
-    color:var(--main-color);
+header .follow a:hover {
+	color: var(--main-color);
 }
 
-#menu-bars{
-    position: fixed;
-    top:1rem; 
-    right: 5%;
-    z-index: 10000;
-    background:var(--main-color);
-    color:var(--text-color);
-    border-radius: .5rem;
-    padding:1rem 1.5rem;
-    font-size: 3rem;
-    cursor:pointer;
-    display: none;
+#menu-bars {
+	position: fixed;
+	top: 1rem;
+	right: 5%;
+	z-index: 10000;
+	background: var(--main-color);
+	color: var(--text-color);
+	border-radius: 0.5rem;
+	padding: 1rem 1.5rem;
+	font-size: 3rem;
+	cursor: pointer;
+	display: none;
 }
 
 /* media queries  */
 
-@media (max-width:1280px){
-    header{
-        width: 25.5rem;
-    }
+@media (max-width: 1280px) {
+	header {
+		width: 25.5rem;
+	}
 }
 
-@media (max-width:991px){
-    #menu-bars{
-        display: initial;
-    }
+@media (max-width: 991px) {
+	#menu-bars {
+		display: initial;
+	}
 
-    header{
-        left:-120%;
-    }
+	header {
+		left: -120%;
+	}
 
-    header.active{
-        left:0%;
-    }
+	header.active {
+		left: 0%;
+	}
 }
 
-@media (max-width:450px){
-    header{
-        width:100%;
-    }
+@media (max-width: 450px) {
+	header {
+		width: 100%;
+	}
 }

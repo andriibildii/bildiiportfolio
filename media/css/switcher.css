@@ -1,41 +1,39 @@
-.style-switcher{
-    position: fixed;
-    right: 12px;
-    top: 12px;
+.style-switcher {
+	position: fixed;
+	right: 12px;
+	top: 12px;
 }
 
-.style-switcher .s-icon{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    font-size: 20px;
-    background: var(--swircher-color);
-    color: black;
-    right: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 50%;
+.style-switcher .s-icon {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	font-size: 20px;
+	background: var(--swircher-color);
+	color: black;
+	right: 100%;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 50%;
 }
 
-.style-switcher .s-icon i{
-    line-height: 40px;
+.style-switcher .s-icon i {
+	line-height: 40px;
 }
 
-.style-switcher .style-switcher-toggler{
-    top: 0;
+.style-switcher .style-switcher-toggler {
+	top: 0;
 }
 
-.style-switcher .night-day{
-    right: 0px;
+.style-switcher .night-day {
+	right: 0px;
 }
 
-
-@media (max-width:991px){
-
-    .style-switcher{
-        position: fixed;
-        right: 5%;
-        top: 72px;
-    }
+@media (max-width: 991px) {
+	.style-switcher {
+		position: fixed;
+		right: 5%;
+		top: 72px;
+	}
 }
