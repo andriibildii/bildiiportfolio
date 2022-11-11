@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	overflow: hidden;
 }
@@ -28,6 +28,10 @@
 	background-position: center;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+}
+
+.login-register {
+	background-image: url("../img/login-register.png");
 }
 
 .findyourrhytm {
