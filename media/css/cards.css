@@ -30,6 +30,10 @@
 	border-top-right-radius: 15px;
 }
 
+.go-reddit {
+	background-image: url("../img/go-reddit.png");
+}
+
 .login-register {
 	background-image: url("../img/login-register.png");
 }
